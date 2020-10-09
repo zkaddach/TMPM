@@ -7,11 +7,17 @@
     "properties": {
         "text": {
             "type": ["string", "null", "array"],
-            "maxLength": 10000
+            "maxLength": 200000
         },
         "user": {
             "type": "string",
-            "maxLength": 10
+            "maxLength": 100
+        },
+        "config_options" : {
+            "type": "object"
+        },
+        "output_options": {
+            "type": "object"
         }
     },
     "minProperties": 1
