@@ -17,7 +17,7 @@ This API can run in docker or on any UNIX operating system. Choose your prefered
 
 1. To get the docker image from Github packages run `docker pull docker.pkg.github.com/zkaddach/tmpm/tmpm_backend:0.0.1` to pull the image.
 2. To start TMPM Back End,
-    * Run `docker run -p 8888:8888 docker.pkg.github.com/zkaddach/tmpm/tmpm_backend:0.0.1`
+    * Run `docker run -p 8888:8888 docker.pkg.github.com/zkaddach/tmpm/tmpm_backend:1.0.0`
 
 ### Docker
 1. Clone this repo from Github into your install folder, then run `docker build -t tmpm:back_end .` to build the image.
