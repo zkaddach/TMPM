@@ -1,0 +1,6 @@
+bottle          # wsgi framework
+requests
+jsonschema
+coloredlogs
+wikidata
+pyyaml

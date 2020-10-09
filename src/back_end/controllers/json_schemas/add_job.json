@@ -1,0 +1,18 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "anyOf": [
+            {"required": ["text"]} 
+        ],
+    "properties": {
+        "text": {
+            "type": ["string", "null", "array"],
+            "maxLength": 10000
+        },
+        "user": {
+            "type": "string",
+            "maxLength": 10
+        }
+    },
+    "minProperties": 1
+}
