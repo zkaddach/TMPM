@@ -13,7 +13,7 @@ The general documentation of the project has not been generated yet.
 Nevertheless we provide a log board containing explanation regarding the architecture of this API in the Management folder.  
 
 ## Getting Started
-tsstfffssss
+tsstfffssssfffffff
 This API can run in docker or on any UNIX operating system. Choose your prefered method of installation.
 
 
