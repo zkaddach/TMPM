@@ -41,7 +41,7 @@ class PropertiesAggregator:
 				try:
 					if not str(entity.properties[key]) in tree[key]:
 						tree[key][str(entity.properties[key])] = []
-					tree[key][str(entity.properties[key])].append((entity.label, entity))
+					tree[key][str(entity.properties[key])].append(str(entity.label))
 				except KeyError:
 					pass
 		return tree

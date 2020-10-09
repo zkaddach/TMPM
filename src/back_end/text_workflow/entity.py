@@ -6,6 +6,7 @@ import logging
 
 # Imports of application files
 from configurations.text_workflow_config import DefaultTextWorkflowConfig as workflow_config
+from wikidata.multilingual import MultilingualText
 
 logger = logging.getLogger("AppLogger." + __name__)
 
@@ -117,6 +118,21 @@ class Entity:
 			return False
 
 		return True
+
+	def as_dict(self):
+		d = {
+			"label": str(self.label),
+			"description": str(self.description),
+			"wikidataId": str(self.wikidata_id),
+		}
+		if self.text_razor_properties is not None:
+			for each in self.text_razor_properties:
+				d[each] = str(self.text_razor_properties[each])
+		if self.properties is not None:
+			for each in self.properties:
+				d[each] = str(self.properties[each])
+
+		return d
 
 
 class Person(Entity):

@@ -13,6 +13,9 @@ class DefaultTextWorkflowConfig:
 		"Workflow completed. Done."
 	]
 
+	EXTRACTION_PARAMETERS = {
+			"extractors": "entities",
+	}
 	ENTITIES_EXTRACTOR = "TextRazorAPI"
 	TEXT_RAZOR_API_KEY = "5d0f7bdc557d2195cfc7290b5b54a676d99bf1212d0428c187cc84c7"
 	TEXT_RAZOR_API_ENDPOINT = "https://api.textrazor.com/"

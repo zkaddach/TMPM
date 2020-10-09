@@ -47,13 +47,118 @@ Where *pytest/curl_request.json* is the JSON file containing the request and fol
 ```
 
 Note that the *text* key can be an array (like the example) or a single text. 
-
+You can save the output in a JSON file as follows : 
+`curl -d @pytest/curl_request.json -H 'Content-Type: application/json' 0.0.0.0:8888/text_workflow -o output.json`
 
 The output will also be a JSON object following the format: 
 ```json
 {
-  "entities": [],
-  "common_properties": {}
+  "persons": [
+        {
+            "label": "Pharrell Williams",
+            "description": "American singer, rapper, songwriter, record producer, fashion designer, and entrepreneur",
+            "wikidataId": "Q14313",
+            "id": "1",
+            "type": "['MusicalArtist', 'Agent', 'Person', 'Artist']",
+            "entityId": "Pharrell Williams",
+            "wikiLink": "http://en.wikipedia.org/wiki/Pharrell_Williams",
+            "matchedText": "Pharrell Williams",
+            "entityEnglishId": "Pharrell Williams",
+            "gender": "male",
+            "birth_date": "1973-04-05",
+            "birth_place": "Virginia Beach",
+            "educated_at": "Northwestern University",
+            "family_name": "Williams",
+            "given_name": "Pharrell",
+            "occupation": "singer",
+            "citizenship": "United States of America",
+            "spouse": "Helen Lasichanh",
+            "ethnic_group": "African Americans",
+            "age": "47"
+        }
+  ],
+  "common_properties": {
+        "occupation": {
+            "singer": [
+                "Pharrell Williams"
+            ],
+            "film actor": [
+                "Jean Dujardin"
+            ]
+        },
+        "spouse": {
+            "Helen Lasichanh": [
+                "Pharrell Williams"
+            ],
+            "Nathalie P\u00e9chalat": [
+                "Jean Dujardin"
+            ]
+        },
+        "ethnic_group": {
+            "African Americans": [
+                "Pharrell Williams"
+            ]
+        },
+        "educated_at": {
+            "Northwestern University": [
+                "Pharrell Williams"
+            ]
+        },
+        "birth_place": {
+            "Virginia Beach": [
+                "Pharrell Williams"
+            ],
+            "Rueil-Malmaison": [
+                "Jean Dujardin"
+            ]
+        },
+        "birth_date": {
+            "1973-04-05": [
+                "Pharrell Williams"
+            ],
+            "1972-06-19": [
+                "Jean Dujardin"
+            ]
+        },
+        "family_name": {
+            "Williams": [
+                "Pharrell Williams"
+            ],
+            "Dujardin": [
+                "Jean Dujardin"
+            ]
+        },
+        "gender": {
+            "male": [
+                "Pharrell Williams",
+                "Jean Dujardin"
+            ]
+        },
+        "given_name": {
+            "Pharrell": [
+                "Pharrell Williams"
+            ],
+            "Jean": [
+                "Jean Dujardin"
+            ]
+        },
+        "citizenship": {
+            "United States of America": [
+                "Pharrell Williams"
+            ],
+            "France": [
+                "Jean Dujardin"
+            ]
+        },
+        "age": {
+            "47": [
+                "Pharrell Williams"
+            ],
+            "48": [
+                "Jean Dujardin"
+            ]
+        }
+    }
 }
 ```
 

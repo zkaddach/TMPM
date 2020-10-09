@@ -8,7 +8,7 @@ import logging
 from pprint import pprint
 
 # Imports of application files
-from configurations.text_workflow_config import DefaultTextWorkflowConfig as Config
+from configurations.text_workflow_config import DefaultTextWorkflowConfig as textConfig
 from text_workflow.entities_extractors import ENTITIES_EXTRACTOR_BUILDER
 from text_workflow.entities_researchers import ENTITIES_RESEARCHER_BUILDER
 from text_workflow.entities_aggregators import PropertiesAggregator
@@ -19,16 +19,17 @@ logger.setLevel(logging.INFO)
 
 class TextJob:
 
-	def __init__(self, text, user_id=None, config=Config):
+	def __init__(self, text, config_options, output_options, user_id=None):
 		""" Constructor of TextJob class. """
 
 		# Configurable attributes
-		self.extraction_parameters = {
-			"extractors": "entities",
-		}
 		self.text = text
 		self.user = user_id
-		self.config = config
+		self.config = textConfig
+		if config_options is None:
+			self.config_options = textConfig
+		if output_options is None:
+			self.output_options = textConfig
 
 		# Generated job information attributes
 		self.starting_time = datetime.now()
@@ -45,11 +46,12 @@ class TextJob:
 		# Entities extraction
 		self.status = self.config.WORKFLOW_STATUS[1]
 		try:
+			print(self.text, self.config_options.EXTRACTION_PARAMETERS)
 			self.entities = ENTITIES_EXTRACTOR_BUILDER[
-				self.config.ENTITIES_EXTRACTOR
+				self.config_options.ENTITIES_EXTRACTOR
 			](
 				self.text,
-				self.extraction_parameters
+				self.config_options.EXTRACTION_PARAMETERS
 			).extract()
 		except KeyError as e:
 			return abort(
@@ -61,7 +63,7 @@ class TextJob:
 		self.status = self.config.WORKFLOW_STATUS[2]
 		for entity in self.entities:
 			try:
-				ENTITIES_RESEARCHER_BUILDER[self.config.ENTITIES_RESEARCHER]().collect(entity)
+				ENTITIES_RESEARCHER_BUILDER[self.config_options.ENTITIES_RESEARCHER]().collect(entity)
 			except Exception as e:
 				return abort(
 					requests.codes.BAD_REQUEST,
@@ -72,15 +74,12 @@ class TextJob:
 		persons = PropertiesAggregator.get_persons(self.entities)
 		common_tree = PropertiesAggregator.get_common_tree(persons)
 
-		print("###############################################\n\n")
-		pprint(common_tree)
+		result = {
+			"persons": [p.as_dict() for p in persons],
+			"common_properties": common_tree
+		}
 
-		# Completing the workflow and returning results
-		self.status = self.config.WORKFLOW_STATUS[3]
-		r = "\n\n------------------------------------------------------\n"
-		r += "Successfully collected information for entities:\n"
-		r += "------------------------------------------------------\n\n"
-		return r
+		return result
 
 	@property
 	def status(self):

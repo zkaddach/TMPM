@@ -14,10 +14,10 @@
             "maxLength": 100
         },
         "config_options" : {
-            "type": "object"
+            "type": ["object", "null"]
         },
         "output_options": {
-            "type": "object"
+            "type": ["object", "null"]
         }
     },
     "minProperties": 1
