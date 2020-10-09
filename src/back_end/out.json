@@ -1,0 +1,174 @@
+{
+    "persons": [
+        {
+            "label": "President of the French Republic",
+            "description": "head of state of France",
+            "wikidataId": "Q191954",
+            "id": "0",
+            "type": "['Agent', 'Person']",
+            "matchingTokens": "[4, 5, 6]",
+            "entityId": "President of France",
+            "freebaseTypes": "['/architecture/building_occupant', '/government/government_office_or_title']",
+            "confidenceScore": "1.838",
+            "wikiLink": "http://en.wikipedia.org/wiki/President_of_France",
+            "matchedText": "president of France",
+            "freebaseId": "/m/0672x",
+            "relevanceScore": "0",
+            "entityEnglishId": "President of France",
+            "startingPos": "21",
+            "endingPos": "40",
+            "image": "<wikidata.commonsmedia.File 'File:Armoiries r\u00e9publique fran\u00e7aise.svg'>"
+        },
+        {
+            "label": "Pharrell Williams",
+            "description": "American singer, rapper, songwriter, record producer, fashion designer, and entrepreneur",
+            "wikidataId": "Q14313",
+            "id": "1",
+            "type": "['MusicalArtist', 'Agent', 'Person', 'Artist']",
+            "matchingTokens": "[8, 9]",
+            "entityId": "Pharrell Williams",
+            "freebaseTypes": "['/music/producer', '/organization/organization_founder', '/music/composer', '/film/actor', '/award/award_winner', '/law/litigant', '/tv/tv_actor', '/tv/tv_personality', '/film/music_contributor', '/internet/social_network_user', '/people/person', '/music/featured_artist', '/film/person_or_entity_appearing_in_film', '/fashion/fashion_designer', '/broadcast/artist', '/music/artist', '/music/lyricist', '/award/award_nominee', '/celebrities/celebrity', '/tv/tv_program_guest', '/music/group_member']",
+            "confidenceScore": "3.1",
+            "wikiLink": "http://en.wikipedia.org/wiki/Pharrell_Williams",
+            "matchedText": "Pharrell Williams",
+            "freebaseId": "/m/04mn81",
+            "relevanceScore": "0.06389",
+            "entityEnglishId": "Pharrell Williams",
+            "startingPos": "43",
+            "endingPos": "60",
+            "gender": "male",
+            "birth_date": "1973-04-05",
+            "image": "<wikidata.commonsmedia.File 'File:Pharrell Williams at The Lion King European Premiere 2019.png'>",
+            "birth_place": "Virginia Beach",
+            "educated_at": "Northwestern University",
+            "family_name": "Williams",
+            "given_name": "Pharrell",
+            "occupation": "singer",
+            "citizenship": "United States of America",
+            "spouse": "Helen Lasichanh",
+            "ethnic_group": "African Americans",
+            "age": "47"
+        },
+        {
+            "label": "Jean Dujardin",
+            "description": "French actor",
+            "wikidataId": "Q189422",
+            "id": "3",
+            "type": "['Agent', 'Person', 'Artist', 'Actor']",
+            "matchingTokens": "[0, 1]",
+            "entityId": "Jean Dujardin",
+            "freebaseTypes": "['/people/person', '/film/actor', '/film/person_or_entity_appearing_in_film', '/film/director', '/film/writer', '/tv/tv_actor', '/award/award_winner', '/music/featured_artist', '/tv/tv_writer', '/film/producer', '/music/artist', '/award/award_nominee', '/music/group_member']",
+            "confidenceScore": "2.838",
+            "wikiLink": "http://en.wikipedia.org/wiki/Jean_Dujardin",
+            "matchedText": "Jean Dujardin",
+            "freebaseId": "/m/03wfnsp",
+            "relevanceScore": "0.06996",
+            "entityEnglishId": "Jean Dujardin",
+            "startingPos": "0",
+            "endingPos": "13",
+            "gender": "male",
+            "birth_date": "1972-06-19",
+            "image": "<wikidata.commonsmedia.File 'File:Christophe Lambert et Jean Dujardin (Cropped).jpg'>",
+            "birth_place": "Rueil-Malmaison",
+            "family_name": "Dujardin",
+            "given_name": "Jean",
+            "occupation": "film actor",
+            "citizenship": "France",
+            "spouse": "Nathalie P\u00e9chalat",
+            "age": "48"
+        }
+    ],
+    "common_properties": {
+        "occupation": {
+            "singer": [
+                "Pharrell Williams"
+            ],
+            "film actor": [
+                "Jean Dujardin"
+            ]
+        },
+        "spouse": {
+            "Helen Lasichanh": [
+                "Pharrell Williams"
+            ],
+            "Nathalie P\u00e9chalat": [
+                "Jean Dujardin"
+            ]
+        },
+        "ethnic_group": {
+            "African Americans": [
+                "Pharrell Williams"
+            ]
+        },
+        "educated_at": {
+            "Northwestern University": [
+                "Pharrell Williams"
+            ]
+        },
+        "birth_place": {
+            "Virginia Beach": [
+                "Pharrell Williams"
+            ],
+            "Rueil-Malmaison": [
+                "Jean Dujardin"
+            ]
+        },
+        "image": {
+            "<wikidata.commonsmedia.File 'File:Armoiries r\u00e9publique fran\u00e7aise.svg'>": [
+                "President of the French Republic"
+            ],
+            "<wikidata.commonsmedia.File 'File:Pharrell Williams at The Lion King European Premiere 2019.png'>": [
+                "Pharrell Williams"
+            ],
+            "<wikidata.commonsmedia.File 'File:Christophe Lambert et Jean Dujardin (Cropped).jpg'>": [
+                "Jean Dujardin"
+            ]
+        },
+        "birth_date": {
+            "1973-04-05": [
+                "Pharrell Williams"
+            ],
+            "1972-06-19": [
+                "Jean Dujardin"
+            ]
+        },
+        "family_name": {
+            "Williams": [
+                "Pharrell Williams"
+            ],
+            "Dujardin": [
+                "Jean Dujardin"
+            ]
+        },
+        "gender": {
+            "male": [
+                "Pharrell Williams",
+                "Jean Dujardin"
+            ]
+        },
+        "given_name": {
+            "Pharrell": [
+                "Pharrell Williams"
+            ],
+            "Jean": [
+                "Jean Dujardin"
+            ]
+        },
+        "citizenship": {
+            "United States of America": [
+                "Pharrell Williams"
+            ],
+            "France": [
+                "Jean Dujardin"
+            ]
+        },
+        "age": {
+            "47": [
+                "Pharrell Williams"
+            ],
+            "48": [
+                "Jean Dujardin"
+            ]
+        }
+    }
+}
