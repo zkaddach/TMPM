@@ -1,7 +1,5 @@
 #####################
 # File presentation
-# fffsss
-##fkoe^ezf
 #####################
 
 # Imports of external libraries
@@ -57,7 +55,7 @@ def parse_arguments():
 	return parser.parse_args()
 
 
-def start_app(arguments):
+def start_app(arguments=None):
 	""" Start server with proper configuration and routes. """
 
 	# LOG Starting server
@@ -65,7 +63,10 @@ def start_app(arguments):
 
 	app = Bottle()
 	server_config.setup(app)
-	run(app, host=arguments.host, port=arguments.port)
+	if arguments is not None:
+		run(app, host=arguments.host, port=arguments.port)
+	else:
+		run(app, host="0.0.0.0", port=8888)
 	logger.info("Bottle server started.")
 
 

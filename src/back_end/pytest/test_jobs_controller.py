@@ -1,5 +1,13 @@
+# Imports of external libraries
+import requests
+from boddle import boddle
+
 # Imports of internal libraries
 import unittest 
+import json
+
+# Import application files
+from controllers.jobs_controller import JobsController
 
 class JobsControllerTest(unittest.TestCase):
 
@@ -17,12 +25,11 @@ class JobsControllerTest(unittest.TestCase):
 
 		pass
 
-	def test_sample(self):
+	def test_correct_input_output(self):
 		""" Method for testing the 'random.sample' function. """
 
-		sample = random.sample(self.listOfValues, 5)
-		for each in sample: 
-			self.assertIn(each, self.listOfValues)
-
-		with self.assertRaises(ValueError):
-			random.sample(self.listOfValues, 11)
+		with open("pytest/curl_request.json", 'r') as f:
+			parameters = json.load(f)
+		with boddle(json=parameters):
+			result = JobsController.add_text_workflow_job()
+			self.assertEqual(type(result), str)
