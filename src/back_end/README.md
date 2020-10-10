@@ -33,8 +33,8 @@ This API can run in docker or on any UNIX operating system. Choose your prefered
 ## Running
 Now that you have set up the API, and it is correctly running you can execute requests using the POST method. 
 you can do so with **curl** for example. 
-`curl -d @pytest/curl_request.json -H 'Content-Type: application/json' 0.0.0.0:8888/text_workflow`
-Where *pytest/curl_request.json* is the JSON file containing the request and follows this schema: 
+`curl -d @pytest/json_schemas/simple_request.json -H 'Content-Type: application/json' 0.0.0.0:8888/text_workflow`
+Where *pytest/json_schemas/simple_request.json* is the JSON file containing the request and follows this schema: 
 
 ```json
 {
@@ -48,7 +48,7 @@ Where *pytest/curl_request.json* is the JSON file containing the request and fol
 
 Note that the *text* key can be an array (like the example) or a single text. 
 You can save the output in a JSON file as follows : 
-`curl -d @pytest/curl_request.json -H 'Content-Type: application/json' 0.0.0.0:8888/text_workflow -o output.json`
+`curl -d @pytest/json_schemas/simple_request.json -H 'Content-Type: application/json' 0.0.0.0:8888/text_workflow -o output.json`
 
 The output will also be a JSON object following the format: 
 ```json
