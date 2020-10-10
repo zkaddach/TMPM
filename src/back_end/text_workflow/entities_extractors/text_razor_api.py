@@ -6,10 +6,11 @@ import requests
 
 # Imports of application files
 from configurations.text_workflow_config import DefaultTextWorkflowConfig as workflow_config
+from text_workflow.entities_extractors.entities_extractor import EntitiesExtractor
 from text_workflow.entity import create_entity
 
 
-class TextRazorAPI:
+class TextRazorAPI(EntitiesExtractor):
 	def __init__(self, text, params):
 		"""Constructor of the TextRazorAPI class.
 		ARGUMENTS
@@ -27,7 +28,7 @@ class TextRazorAPI:
 		}
 
 	def extract(self):
-		"""Extract entities from the text using the TextRazorAPI.
+		"""Extract entities from the text.
 		OUTPUT:
 			* entities: list of objects Entity
 		"""

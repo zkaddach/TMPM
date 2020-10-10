@@ -2,16 +2,19 @@
 import logging
 
 # Imports of external libraries
-
 from bottle import abort
 import requests
 from wikidata.client import Client
 
+# Imports of application files
+from text_workflow.entities_researchers.entities_researcher import EntitiesResearcher
+
+# Set up logger
 logger = logging.getLogger("AppLogger." + __name__)
 logger.setLevel(logging.INFO)
 
 
-class WikidataAPI:
+class WikidataAPI(EntitiesResearcher):
 
 	def collect(self, entity):
 		"""Collecting information of entity from WikidataAPI
