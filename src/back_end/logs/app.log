@@ -2525,3 +2525,5 @@
 2020-10-10 11:20:28,606 - AppLogger.text_workflow.entity - DEBUG - Can't find property marriage_place : <wikidata.entity.Entity P2842>
 2020-10-10 11:20:28,606 - AppLogger.text_workflow.entity - DEBUG - Can't find property ethnic_group : <wikidata.entity.Entity P172>
 2020-10-10 11:35:14,869 - AppLogger.__main__ - INFO - Bottle server started.
+2020-10-10 12:34:44,798 - AppLogger.__main__ - INFO - Starting the Bottle server.
+2020-10-10 12:34:49,932 - AppLogger.__main__ - INFO - Bottle server started.
