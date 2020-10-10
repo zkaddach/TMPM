@@ -4,3 +4,4 @@ jsonschema
 coloredlogs
 wikidata
 pyyaml
+boddle
