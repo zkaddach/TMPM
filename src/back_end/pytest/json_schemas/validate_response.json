@@ -1,0 +1,17 @@
+{
+    "type": "object",
+    "additionalProperties": false,
+    "anyOf": [
+            {"required": ["persons", "common_properties"]}
+        ],
+    "properties": {
+        "persons": {
+            "type": ["array"]
+        },
+        "common_properties": {
+            "type": "object"
+        }
+
+    },
+    "minProperties": 1
+}
