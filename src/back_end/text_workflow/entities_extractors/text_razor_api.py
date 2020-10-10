@@ -35,7 +35,6 @@ class TextRazorAPI(EntitiesExtractor):
 
 		# Sending request to TextRazorAPI
 		try:
-			print(self.req_data)
 			req = requests.post(
 				workflow_config.TEXT_RAZOR_API_ENDPOINT,
 				data=self.req_data

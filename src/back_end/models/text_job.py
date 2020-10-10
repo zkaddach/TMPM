@@ -46,7 +46,6 @@ class TextJob:
 		# Entities extraction
 		self.status = self.config.WORKFLOW_STATUS[1]
 		try:
-			print(self.text, self.config_options.EXTRACTION_PARAMETERS)
 			self.entities = ENTITIES_EXTRACTOR_BUILDER[
 				self.config_options.ENTITIES_EXTRACTOR
 			](

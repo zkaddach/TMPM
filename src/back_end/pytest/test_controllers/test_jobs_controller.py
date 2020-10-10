@@ -10,6 +10,7 @@ import json
 # Import application files
 from controllers.jobs_controller import JobsController
 
+
 class JobsControllerTest(unittest.TestCase):
 
 	""" Test case for testing the 'JobsController' class. """

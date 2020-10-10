@@ -2539,3 +2539,37 @@
 2020-10-10 12:54:55,504 - AppLogger.text_workflow.entity - DEBUG - Can't find property child : <wikidata.entity.Entity P40>
 2020-10-10 12:54:55,504 - AppLogger.text_workflow.entity - DEBUG - Can't find property spouse : <wikidata.entity.Entity P26>
 2020-10-10 12:54:55,505 - AppLogger.text_workflow.entity - DEBUG - Can't find property marriage_place : <wikidata.entity.Entity P2842>
+2020-10-10 13:05:25,754 - AppLogger.__main__ - INFO - Bottle server started.
+2020-10-10 13:05:26,123 - AppLogger.__main__ - INFO - Starting the Bottle server.
+2020-10-10 13:05:29,715 - AppLogger.controllers.jobs_controller - INFO - User launched new text workflow job.
+2020-10-10 13:05:29,721 - AppLogger.models.text_job - INFO - Initialization of the workflow...
+2020-10-10 13:05:29,721 - AppLogger.models.text_job - INFO - Extracting entities...
+2020-10-10 13:05:30,266 - AppLogger.models.text_job - INFO - Collecting data for entities...
+2020-10-10 13:05:31,614 - AppLogger.text_workflow.entity - DEBUG - Can't find property death_date : <wikidata.entity.Entity P570>
+2020-10-10 13:05:31,614 - AppLogger.text_workflow.entity - DEBUG - Can't find property educated_at : <wikidata.entity.Entity P69>
+2020-10-10 13:05:33,277 - AppLogger.text_workflow.entity - DEBUG - Can't find property field_of_work : <wikidata.entity.Entity P101>
+2020-10-10 13:05:33,278 - AppLogger.text_workflow.entity - DEBUG - Can't find property position_held : <wikidata.entity.Entity P39>
+2020-10-10 13:05:34,964 - AppLogger.text_workflow.entity - DEBUG - Can't find property child : <wikidata.entity.Entity P40>
+2020-10-10 13:05:34,964 - AppLogger.text_workflow.entity - DEBUG - Can't find property spouse : <wikidata.entity.Entity P26>
+2020-10-10 13:05:34,964 - AppLogger.text_workflow.entity - DEBUG - Can't find property marriage_place : <wikidata.entity.Entity P2842>
+2020-10-10 13:06:38,629 - AppLogger.__main__ - INFO - Bottle server started.
+2020-10-10 17:07:10,271 - AppLogger.__main__ - INFO - Starting the Bottle server.
+2020-10-10 17:07:12,787 - AppLogger.controllers.jobs_controller - INFO - User launched new text workflow job.
+2020-10-10 17:07:21,901 - AppLogger.controllers.jobs_controller - INFO - User launched new text workflow job.
+2020-10-10 17:07:21,939 - AppLogger.models.text_job - INFO - Initialization of the workflow...
+2020-10-10 17:07:21,939 - AppLogger.models.text_job - INFO - Extracting entities...
+2020-10-10 17:07:22,535 - AppLogger.models.text_job - INFO - Collecting data for entities...
+2020-10-10 17:07:24,153 - AppLogger.text_workflow.entity - DEBUG - Can't find property death_date : <wikidata.entity.Entity P570>
+2020-10-10 17:07:24,154 - AppLogger.text_workflow.entity - DEBUG - Can't find property educated_at : <wikidata.entity.Entity P69>
+2020-10-10 17:07:26,047 - AppLogger.text_workflow.entity - DEBUG - Can't find property field_of_work : <wikidata.entity.Entity P101>
+2020-10-10 17:07:26,048 - AppLogger.text_workflow.entity - DEBUG - Can't find property position_held : <wikidata.entity.Entity P39>
+2020-10-10 17:07:27,925 - AppLogger.text_workflow.entity - DEBUG - Can't find property child : <wikidata.entity.Entity P40>
+2020-10-10 17:07:27,925 - AppLogger.text_workflow.entity - DEBUG - Can't find property spouse : <wikidata.entity.Entity P26>
+2020-10-10 17:07:27,925 - AppLogger.text_workflow.entity - DEBUG - Can't find property marriage_place : <wikidata.entity.Entity P2842>
+2020-10-10 17:07:29,818 - AppLogger.text_workflow.entity - DEBUG - Can't find property death_date : <wikidata.entity.Entity P570>
+2020-10-10 17:07:30,072 - AppLogger.text_workflow.entity - DEBUG - Can't find property family_name : <wikidata.entity.Entity P734>
+2020-10-10 17:07:30,947 - AppLogger.text_workflow.entity - DEBUG - Can't find property field_of_work : <wikidata.entity.Entity P101>
+2020-10-10 17:07:30,947 - AppLogger.text_workflow.entity - DEBUG - Can't find property position_held : <wikidata.entity.Entity P39>
+2020-10-10 17:07:33,593 - AppLogger.text_workflow.entity - DEBUG - Can't find property marriage_place : <wikidata.entity.Entity P2842>
+2020-10-10 17:07:33,593 - AppLogger.text_workflow.entity - DEBUG - Can't find property ethnic_group : <wikidata.entity.Entity P172>
+2020-10-10 17:08:58,591 - AppLogger.__main__ - INFO - Bottle server started.
