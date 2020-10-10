@@ -6,7 +6,6 @@ import logging
 
 # Imports of application files
 from configurations.text_workflow_config import DefaultTextWorkflowConfig as workflow_config
-from wikidata.multilingual import MultilingualText
 
 logger = logging.getLogger("AppLogger." + __name__)
 
