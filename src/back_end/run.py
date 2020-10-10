@@ -7,7 +7,6 @@ from bottle import Bottle, run
 
 # Imports of internal libraries
 import argparse
-import logging
 import logging.config
 import coloredlogs
 import yaml
