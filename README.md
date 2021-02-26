@@ -6,6 +6,20 @@ With TMPM you will be able to :
 * Collect information for each person detected within the entities of the text.
 * Retrieve common properties between persons. 
 
+## collapsible markdown?
+
+<details><summary>CLICK ME</summary>
+<p>
+
+#### yes, even hidden code blocks!
+
+```python
+print("hello world!")
+```
+
+</p>
+</details>
+
 ## Documentation
 The general documentation of the project has not been generated yet. 
 Nevertheless we provide a log board containing explanation regarding the architecture of this API in the Management folder.  
