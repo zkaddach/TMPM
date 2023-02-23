@@ -1,4 +1,4 @@
-# TMPM Text mining for Perfect Memory 
+# TMPM Text mining
 TMPM allows you to perform text analysis. 
 
 With TMPM you will be able to : 
